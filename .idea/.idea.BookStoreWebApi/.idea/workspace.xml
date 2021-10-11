@@ -6,7 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5bc209e-9800-4145-8e8d-7dc34b4f0dc5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherForecast.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/BookController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DBOperations/BookStoreDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DBOperations/DataGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BookStoreWebApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BookStoreWebApi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookStoreWebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BookStoreWebApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherForecast.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +30,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Controllers/BookController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c3e4c2e9cfe1442e80b26211dd3536d61bfb90/08/cbaa5998/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2b369d19768947fcba24b2d54b76014c1bbb78/38/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1zMGB49FFHVn9IvCRT8cbMsBhKX" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,6 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.BookStoreWebApi">
@@ -76,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633950405188</updated>
-      <workItem from="1633950411288" duration="692000" />
+      <workItem from="1633950411288" duration="13824000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1633950636911</created>
