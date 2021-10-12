@@ -6,16 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5bc209e-9800-4145-8e8d-7dc34b4f0dc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Controllers/BookController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DBOperations/BookStoreDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DBOperations/DataGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/Book.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookOperations/CreateBook/CreateBookCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookOperations/DeleteBook/DeleteBookCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookOperations/GetBookDetail/GetBookDetailQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookOperations/GetBooks/GetBooksQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookOperations/UpdateBook/UpdateBookCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utils/GenreEnum.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BookStoreWebApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BookStoreWebApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookStoreWebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BookStoreWebApi.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/BookController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +28,17 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Controllers/BookController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3e4c2e9cfe1442e80b26211dd3536d61bfb90/74/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c3e4c2e9cfe1442e80b26211dd3536d61bfb90/08/cbaa5998/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2b369d19768947fcba24b2d54b76014c1bbb78/38/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -91,7 +98,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633950405188</updated>
-      <workItem from="1633950411288" duration="13824000" />
+      <workItem from="1633950411288" duration="14775000" />
+      <workItem from="1634031030188" duration="6896000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1633950636911</created>
@@ -107,20 +115,47 @@
       <option name="project" value="LOCAL" />
       <updated>1633950774033</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="In memory db added">
+      <created>1633980043608</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633980043608</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="created dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="created dev" />
+    <MESSAGE value="In memory db added" />
+    <option name="LAST_COMMIT_MESSAGE" value="In memory db added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BookOperations/UpdateBook/UpdateBookCommand.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Users\Engin\RiderProjects\BookStoreWebApi\BookOperations\UpdateBook\UpdateBookCommand.cs" initialLine="19" containingFunctionPresentation="method 'Handle'">
+            <startOffsets>
+              <option value="725" />
+            </startOffsets>
+            <endOffsets>
+              <option value="792" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
