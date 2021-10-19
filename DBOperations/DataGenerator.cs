@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using BookStoreWebApi.Entity;
+using BookStoreWebApi.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -17,10 +17,56 @@ namespace BookStoreWebApi.DBOperations
                 {
                     return;
                 }
+                
+                context.Genres.AddRange(
+                    new Genre
+                    {
+                        Name = "Personal Growth"
+                    },
+                    new Genre
+                    {
+                        Name = "Science Fiction"
+                    },
+                    new Genre
+                    {
+                        Name = "Romance"
+                    }
+                    );
+                context.Authors.AddRange(
+                    new Author
+                    {
+                        Birthday = new DateTime(2011,06,10),
+                        Name = "Engin",
+                        Surname = "Yağmur",
+                    },
+                    new Author
+                    {
+                        Birthday = new DateTime(2011,06,10),
+                        Name = "Erkan",
+                        Surname = "Yağmur",
+                    },
+                    new Author
+                    {
+                        Birthday = new DateTime(2011,06,10),
+                        Name = "Gökhan",
+                        Surname = "Kocamaz",
+                    },
+                    new Author
+                    {
+                        Birthday = new DateTime(2011,06,10),
+                        Name = "Melike",
+                        Surname = "Yaşar",
+                    }
+                    
+                  
+                );
+                
+                
                 context.Books.AddRange(
                     new Book
                     {
                        // Id =1,
+                       AuthorId = 1,
                         Title = "Geleceğin Fiziği",
                         GenreId = 1, //science fiction
                         PageCount = 600,
@@ -29,6 +75,7 @@ namespace BookStoreWebApi.DBOperations
                     new Book
                     {
                        // Id =2,
+                       AuthorId = 1,
                         Title = "Lean Startup",
                         GenreId = 2, //personal growth
                         PageCount = 350,
@@ -37,6 +84,7 @@ namespace BookStoreWebApi.DBOperations
                     new Book
                     {
                         // Id =3,
+                        AuthorId = 2,
                         Title = "Kozmos",
                         GenreId = 1, //science fiction
                         PageCount = 450,
