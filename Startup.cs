@@ -4,7 +4,8 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using BookStoreWebApi.DBOperations;
-using BookStoreWebApi.Entity;
+using BookStoreWebApi.Middlawares;
+using BookStoreWebApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -39,6 +40,7 @@ namespace BookStoreWebApi
             services.AddDbContext<BookStoreDbContext>(options => options.UseInMemoryDatabase(databaseName:"BookStoreDB"));
             // Veritabanını inject ettik.
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddSingleton<ILoggerService, ConsoleLogger>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +58,8 @@ namespace BookStoreWebApi
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCustomExceptionMiddleware();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }

@@ -1,8 +1,14 @@
 ﻿using AutoMapper;
-using BookStoreWebApi.BookOperations.CreateBook;
-using BookStoreWebApi.BookOperations.GetBookDetail;
-using BookStoreWebApi.BookOperations.GetBooks;
-using BookStoreWebApi.Entity;
+using BookStoreWebApi.Application.AuthorOperations.Commands.CreateAuthor;
+using BookStoreWebApi.Application.AuthorOperations.Commands.UpdateAuthorCommand;
+using BookStoreWebApi.Application.AuthorOperations.Queries.GetAuthorDetail;
+using BookStoreWebApi.Application.AuthorOperations.Queries.GetAuthors;
+using BookStoreWebApi.Application.BookOperations.Commands.CreateBook;
+using BookStoreWebApi.Application.BookOperations.Queries.GetBookDetail;
+using BookStoreWebApi.Application.BookOperations.Queries.GetBooks;
+using BookStoreWebApi.Application.GenreOperations.Queries.GetGenreDetail;
+using BookStoreWebApi.Application.GenreOperations.Queries.GetGenres;
+using BookStoreWebApi.Entities;
 
 namespace BookStoreWebApi.Utils
 {
@@ -15,11 +21,19 @@ namespace BookStoreWebApi.Utils
                 .ForMember(des =>
                         des.Genre,
                     opt =>
-                        opt.MapFrom(src => ((GenreEnum)src.GenreId).ToString() + " Engin"));
+                        opt.MapFrom(src => src.Genre.Name ));
             CreateMap<Book, BooksViewModel>().ForMember(des =>
                     des.Genre,
                 opt =>
-                    opt.MapFrom(src => ((GenreEnum)src.GenreId).ToString() + " Erkan"));
+                    opt.MapFrom(src => src.Genre.Name));
+
+            CreateMap<Genre, GenresViewModel>();
+            CreateMap<Genre, GenreDetailViewModel>();
+            CreateMap<CreateAuthorModel,Author>();
+            
+            CreateMap<Author, GetAuthorModel>();
+            CreateMap<UpdateAuthorModel, Author>();
+            CreateMap<Author, GetAuthorDetailQueryModel>();
 
         }
     }
